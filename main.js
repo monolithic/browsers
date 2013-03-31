@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-    jQuery(this).browsers();
-
+    $("body").browsers();
 
 });

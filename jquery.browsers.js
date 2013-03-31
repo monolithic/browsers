@@ -26,10 +26,57 @@
 
         return this.each(function(){
 
-            var $ua = $(this).userAgent.match(/mozilla/i);
+            var os = (function(){
+                var $userAgent = navigator.userAgent.toLowerCase();
+                return {
+                    // OS
+                    isWin: /windows/.test($userAgent),
+                    isLinux: /linux/.test($userAgent),
+                    isAndroid: /android/.test($userAgent),
+                    isMobile: /mobile/.test($userAgent),
 
-            console.log($ua);
+                    // Moteurs de rendu
+                    isWebkit: /applewebkit/.test($userAgent),
+                    isGecko: /gecko\//.test($userAgent),
+                    isTrident: /trident/.test($userAgent),
 
+                    // Browsers
+                    isFirefox: /firefox/.test($userAgent),
+                    isChrome: /chrome/.test($userAgent)
+                };
+            }());
+            // OS
+            if(os.isWin == true){
+                $(this).addClass("windows");
+            }
+            if(os.isLinux == true){
+                $(this).addClass("linux");
+            }
+            if(os.isAndroid == true){
+                $(this).addClass("android");
+            }
+            if(os.isMobile == true){
+                $(this).addClass("mobile");
+            }
+
+            // Moteurs de rendu
+            if(os.isWebkit == true){
+                $(this).addClass("webkit");
+            }
+            if(os.isGecko == true){
+                $(this).addClass("gecko");
+            }
+            if(os.isTrident == true){
+                $(this).addClass("trident");
+            }
+
+            // Browsers
+            if(os.isFirefox == true){
+                $(this).addClass("firefox");
+            }
+            if(os.isChrome == true){
+                $(this).addClass("chrome");
+            }
 
         });
     };
