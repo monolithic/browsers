@@ -1,6 +1,6 @@
 /* Project: Browsers.js
- * Code name: Chimeara
- * Version: 1.0-b.1
+ * Code name: 
+ * Version: 1.0-beta.2
  *  Author: Agence Epsilon
  * Author URL: http://www.agenceepsilon.com
  * Git URL: https://github.com/agenceepsilon/lightbox
