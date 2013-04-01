@@ -1,5 +1,5 @@
 /* Project: Browsers.js
- * Code name:
+ * Code name: Lincoln
  * Version: 0.1.0
  *  Author: Agence Epsilon
  * Author URL: http://www.agenceepsilon.com
@@ -20,6 +20,8 @@
 
         // Defaults options
         var defaults = {
+            osClass: true,
+            engineClass: true
         };
 
         var param = $.extend(defaults, opts);
@@ -33,7 +35,6 @@
                     isWin: /windows/.test($userAgent),
                     isLinux: /linux/.test($userAgent),
                     isAndroid: /android/.test($userAgent),
-                    isMobile: /mobile/.test($userAgent),
 
                     // Moteurs de rendu
                     isWebkit: /applewebkit/.test($userAgent),
@@ -42,7 +43,9 @@
 
                     // Browsers
                     isFirefox: /firefox/.test($userAgent),
-                    isChrome: /chrome/.test($userAgent)
+                    isChrome: /chrome/.test($userAgent),
+                    isSafari: /safari/.test($userAgent)
+
                 };
             }());
             // OS
@@ -54,9 +57,6 @@
             }
             if(os.isAndroid == true){
                 $(this).addClass("android");
-            }
-            if(os.isMobile == true){
-                $(this).addClass("mobile");
             }
 
             // Moteurs de rendu
@@ -74,8 +74,11 @@
             if(os.isFirefox == true){
                 $(this).addClass("firefox");
             }
-            if(os.isChrome == true){
+            if(os.isChrome == true && os.isSafari == true){
                 $(this).addClass("chrome");
+            }
+            if(os.isSafari == true){
+                $(this).addClass("safari");
             }
 
         });
