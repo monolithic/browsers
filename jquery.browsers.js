@@ -1,6 +1,6 @@
 /* Project: Browsers.js
  * Code name:
- * Version: 0.1
+ * Version: 0.1.0
  *  Author: Agence Epsilon
  * Author URL: http://www.agenceepsilon.com
  * Git URL: https://github.com/agenceepsilon/lightbox
