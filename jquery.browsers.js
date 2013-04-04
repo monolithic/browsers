@@ -1,17 +1,16 @@
 /* Project: Browsers.js
  * Code name: Lincoln
  * Version: 0.1.0
- *  Author: Agence Epsilon
+ * Author: Agence Epsilon
  * Author URL: http://www.agenceepsilon.com
- * Git URL: https://github.com/agenceepsilon/lightbox
- * Plugin URL: http://plugins.jquery.com/lightbox/
- * Release Date: 11/10/2012
+ * Git URL: https://github.com/agenceepsilon/browsers
+ * Plugin URL: http://plugins.jquery.com/browsers/
+ * Release Date: 24/03/2013
  *
- * Description: Lightbox.js
- * jQuery: 1.8+
- * jQuery UI: 1.9+
+ * Description: Browsers.js
+ * jQuery: 1.9+
+ * jQuery UI:
  * Plugin(s):
- *  - jquery-cookie.js (https://github.com/carhartl/jquery-cookie)
  * Browsers: IE7+, Firefox 5+, Chrome 20+, Safari 3+, Opera 10+
  */
 
